@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impliment Dom</title>
+   
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+           
+            
+        }
+        img{
+           
+            height: 200px;
+            width: 200px;
+            position: relative;
+            left: 2%;
+            top: 5px;
+            border-radius: 100px;
+            size-adjust: auto;
+        }
+        .d{
+           
+            height: 200px;
+            width: 200px;
+            position: relative;
+            left: 40%;
+            top: 5px;
+            border-radius: 100px;
+            size-adjust: auto;
+        }
+        
+        .b{
+           
+            height: 200px;
+            width: 200px;
+            position: relative;
+            left: 70%;
+            top: 460px;
+            border-radius: 100px;
+            size-adjust: auto;
+        }
+        .c{
+           
+            height: 200px;
+            width: 200px;
+            position: relative;
+            left: -390px;
+            top: 450px;
+            border-radius: 100px;
+            size-adjust: auto;
+        }
+        
+
+        input{
+             margin: 10px;
+             padding: 10px;
+             background-color: brown;
+             border-radius: 30px;
+            
+        }
+        .dolor{
+            padding: 10px;
+            color: aqua;
+            border: 1px solid lightgreen;
+        }
+        .sit{
+            padding: 10px;
+            color: rgb(111, 187, 187);
+            border: 1px solid rgb(200, 15, 101);
+        }
+        div{
+            
+            text-align: center;
+            position: relative;
+            top: -200px;
+            
+        }
+        
+    </style>
+    <script>
+        // to Slecting by using css selectors:
+        function shamshad() {
+            document.body.bgColor = "pink";// use property name is document.body
+            document.images[0].src= "firdous.jpg";// use property is .images
+            document.images[1].src= "firdous.jpg";// use property is .images
+            document.images[2].src= "firdous.jpg";// use property is .images
+            document.images[3].src= "firdous.jpg";// use property is .images
+            document.links[1].href = "https://github.com/mdshamshadali?tab=overview&from=2024-09-01&to=2024-09-14";// used .links
+
+           // let element = document.querySelectorAll(".shams")
+          //  element.forEach((items) => {
+                items.style.border = "solid 2px white"
+          //  });
+
+            let para = document.querySelectorAll("p");
+            para.forEach((paras) => {
+                
+                if (paras.innerText.indexOf("dolor") != -1){
+                  paras.classList.add("dolor");
+                }
+                  else if (paras.innerText.indexOf("sit") != -1){
+                  paras.classList.add("sit");
+                }
+            });
+            
+        }
+         function shaim() {
+            let divs = document.querySelector("div");
+            let child = divs.childNodes;
+            child.forEach(x => {
+                if(x.nodeType== 1){
+                    x.style.color= "red";
+                }
+                
+            });
+         } 
+    </script>
+</head> 
+
+<body>
+    <img src="sham.jpg" alt="my pic" >
+    <img src="sham.jpg" alt="my pic" class="b">
+    <img src="sham.jpg" alt="my pic" class="c">
+    <img src="sham.jpg" alt="my pic" class="d">
+    <div>
+    <h1>hello shamshad</h1>
+    <h2>My name is shamshad ali</h2>
+
+    <p>Lorem ipsum dolor  amet consectetur adipisicing elit. Doloremque quam cumque minus, harum voluptatem tenetur!
+    </p>
+    <h3>our skills</h3>
+    <ul class=" shams" id="ali1">
+        <li>c language</li>
+        <li>c++ language</li>
+        <li> java language</li>
+        <li>python language</li>
+    </ul>
+    <ul class=" shams" id="ali2">
+        <li>c language</li>
+        <li>c++ language</li>
+        <li> java language</li>
+        <li>python language</li>
+    </ul>
+    <ul class=" shams" id="ali3">
+        <li>c language</li>
+        <li>c++ language</li>
+        <li> java language</li>
+        <li>python language</li>
+    </ul>
+    <ul class=" shams" id="ali4">
+        <li>c language</li>
+        <li>c++ language</li>
+        <li> java language</li>
+        <li>python language</li>
+    </ul>
+    <h3>Links</h3>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum  sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum  sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum sit amet.</p>
+    
+    <a href="https://www.linkedin.com/in/md-shamshad-ali-a855ab222/">My linkedin</a><br>
+    <a href="https://www.instagram.com/stories/shamshadali_03/">My instagram</a><br>
+
+    <input type="button" value="click here" onclick="shamshad()">
+    <input type="button" value="click here" onclick="shaim()">
+</div>
+</body>
+
+</html>

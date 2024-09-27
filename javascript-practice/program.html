@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- write a javascript code to accept the birth year from the user and calculate 
+     and print his age. make sure if the age turns out to be 0 or nagative your code prompts the user to
+     input his birth year again until the age comes positive: -->
+     <script>
+        let currentyear = 2024;
+        let age; 
+        do{ 
+            let birthYear = Number(prompt("enter your birthyear:"));
+            age = currentyear - birthYear;
+            if (age > 0){
+                document.write(`your age is ${age} years<br> `);
+                if (age >= 18)
+                document.write("you are eligible to vote");
+                 else 
+                 document.write("you are not eligible to vote");
+                 break;
+            }
+            alert("Invalid age: Try again");
+        }while(age <= 0);
+     </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>crating Object in by anonymous function:</title>
+
+    <script>
+         let myCar = new Object()
+         myCar["company"] = "Maruti";
+         myCar["model"] = "old model";
+         myCar["year"] = "2012";
+         myCar.showALL= function()// it is created by subscript [].
+         {
+            console.log(myCar.company + ","+ myCar.model +"," +myCar.year);
+         }
+         myCar.showALL();// creating user define object in function.
+         
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

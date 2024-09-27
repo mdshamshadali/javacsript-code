@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Div color change</title>
+    <script>
+        function changecolor1(){
+            x = document.querySelector("#div1");
+            x.style.backgroundColor = "crimson";
+        }
+        function changecolor2(){
+            x = document.querySelector("#div2");
+            x.style.backgroundColor = "blue";
+        }
+
+    </script>
+    <style>
+        #div1{
+            width: 200px;
+            height: 200px;
+            border: 2px solid black;
+        }
+        #div2{
+            width: 200px;
+            height: 200px;
+            border: 2px solid black;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="div1" onclick="changecolor1();">
+        hello Shamshad
+    </div>
+    <div id="div2" onclick="changecolor2();">
+        hello Saim
+    </div>
+    
+</body>
+</html>

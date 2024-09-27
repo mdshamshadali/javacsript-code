@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>neasted in object </title>
+
+    <script>
+        let myCar = new Object();
+        myCar.company = "maruti";
+        myCar.model = "baleno";
+        myCar.year = 2020;
+        myCar.myStireo = new Object();
+        myCar.myStireo.name = "kenwood";
+        myCar.myStireo.maxVal = 30;
+        console.log(myCar);
+        console.log(myCar.company);
+        console.log(myCar.model);
+        console.log(myCar.year);
+        console.log(myCar.myStireo.name);
+        console.log(myCar["myStireo"]["maxVal"]);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

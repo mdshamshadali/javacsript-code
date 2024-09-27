@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Div color change creat only one function</title>
+    <script>
+        function changecolor(x){
+            if(x.getAttribute("id") === "div1")
+              x.style.backgroundColor = "green";
+              else
+                 x.style.backgroundColor= "pink";
+           
+        }
+
+    </script>
+    <style>
+        #div1{
+            width: 200px;
+            height: 200px;
+            border: 2px solid black;
+        }
+        #div2{
+            width: 200px;
+            height: 200px;
+            border: 2px solid black;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="div1" onclick="changecolor(this);">
+        hello Shamshad green color.
+    </div>
+    <div id="div2" onclick="changecolor(this);">
+        hello Saim pink color.
+    </div>
+    
+</body>
+</html>

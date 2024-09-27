@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nesting object by using for in loop;</title>
+
+    <script>
+        let myCar= new Object();
+        myCar.company = 'scorpio';
+        myCar.model = 'mahindra';
+        myCar.year = 2024;
+        myCar.myStereo = new Object();
+        myCar.myStereo.name = 'kenwood';
+        myCar.myStereo.maxVol = 50;
+        for (key in myCar)
+        {
+            if(typeof myCar[key]==="object")
+            {
+                for(x in myCar[key]){
+                console.log(x + ":" + myCar[key][x]);
+            }
+        }
+        else
+             console.log(key +":"+ myCar[key]);
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

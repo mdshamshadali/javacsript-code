@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="exercise1.css">
+
+    <script>
+          
+        function decorate(){
+            let para = document.querySelector("p");
+            para.classList.add("error");
+        }
+        function undecorate(){
+            let para = document.querySelector("p");
+            para.classList.remove("error");
+        }
+      
+    </script>
+</head>
+<body>
+
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore, praesentium.</p>
+    <input type="button" value="Add class" onclick="decorate();">
+    
+</body>
+</html>

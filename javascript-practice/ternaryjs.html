@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let a, str;
+        a = prompt(" enter an integer");
+        if(isNaN(a) == false) {
+            a = Number(a);
+            str =  (a%2 == 0)? "number is even" : " number is odd";
+        }
+        else{
+            str = "you did not a number";
+        }
+        document.write(`${str}`);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

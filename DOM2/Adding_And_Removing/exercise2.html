@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="exercise2.css">
+
+    <script>
+        function decorate() {
+            let para = document.querySelectorAll("p");
+                 para.forEach(item => {
+                if(item.innerText.indexOf("success")!=-1)
+                item.classList.add("success");
+                else if(item.innerText.indexOf("error")!=-1)
+                item.classList.add("error");
+            });
+        }
+       
+    </script>
+</head>
+<body>
+    <p>Lorem, ipsum dolor sit amet  success consectetur adipisicing elit. Inventore, praesentium.</p>
+    <p>Lorem, ipsum dolor sit amet  error consectetur adipisicing elit. Inventore, praesentium.</p>
+    <p>Lorem, ipsum dolor sit amet success consectetur adipisicing elit. Inventore, praesentium.</p>
+    <p>Lorem, ipsum dolor sit amet success consectetur adipisicing elit. Inventore, praesentium.</p>
+    <p>Lorem, ipsum dolor sit amet error consectetur adipisicing elit. Inventore, praesentium.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore, praesentium.</p>
+    <input type="button" value="Add class" onclick="decorate();">
+</body>
+</html>

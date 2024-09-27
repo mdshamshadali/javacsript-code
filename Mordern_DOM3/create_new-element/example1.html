@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create New Elements</title>
+    <script>
+        function addpara() {
+            let div = document.querySelector("div");
+            let p = document.createElement("p");
+            let t = document.createTextNode(" Para third ");
+            p.append(t);
+            div.append(p);
+        }
+    </script>
+</head>
+
+<body>
+    <div>
+        <p id="d1">
+            para first.
+        </p>
+        <p id="d2">
+            para second.
+        </p>
+    </div>
+    <input type="button" value="add new para" onclick="addpara();">
+</body>
+
+</html>

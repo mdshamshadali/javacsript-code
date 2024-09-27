@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impliment Dom</title>
+   
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            
+        }
+        img{
+           
+            height: 300px;
+            width: 300px;
+            position: relative;
+            left: 40%;
+            top: 50px;
+        }
+        input{
+             margin: 10px;
+             padding: 10px;
+             background-color: brown;
+             border-radius: 30px;
+            
+        }
+    </style>
+    <script>
+        // to access html command by using dot syntax:
+        function shamshad() {
+            document.body.bgColor = "blue";// use property name is document.body
+            document.images[0].src= "firdous.jpg";// use property is .images
+            document.links[1].href = "https://github.com/mdshamshadali?tab=overview&from=2024-09-01&to=2024-09-14";// used .links
+
+        }
+    </script>
+</head>
+
+<body>
+    <img src="shaim.jpg" alt="my pic">
+    <h1>hello shamshad</h1>
+    <h2>My name is shamshad ali</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque quam cumque minus, harum voluptatem tenetur!
+    </p>
+    <h3>our skills</h3>
+    <ul>
+        <li>c language</li>
+        <li>c++ language</li>
+        <li> java language</li>
+        <li>python language</li>
+    </ul>
+    <h3>Links</h3>
+    <a href="https://www.linkedin.com/in/md-shamshad-ali-a855ab222/">My linkedin</a><br>
+    <a href="https://www.instagram.com/stories/shamshadali_03/">My instagram</a><br>
+    <input type="button" value="click here" onclick="shamshad()" style="margin-top:20px">
+</body>
+
+</html>

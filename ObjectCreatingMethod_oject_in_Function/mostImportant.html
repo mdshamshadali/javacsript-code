@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Details:</title>
+    <script>
+        let company={
+            name:"apple",
+            foundationYear: 1996,
+            productList:[
+                  {name:"IPhone",year:2007},
+                  {name:"IPad",year:2010},
+            ],
+            foundedBy:["Steve jobs"," Steve Wozniak"],
+            Ceo: "Steve jobs",
+            CreatNewProduct: function(product){
+                company.productList.push(product);
+            },
+            resign: function(){
+                str = company.Ceo;
+                company.Ceo = null;
+                return str;
+            
+            },
+            hireCeo: function(name){
+                company.Ceo = name;
+
+            },
+            toString: function(){
+                let str="";
+            for(p of company.productList){
+              str= str+p.name +"-"+p.year+",";
+            }
+            
+                return `<b> name:</b>${company.name}<br>
+                 <strong> foundation year:</strong>${company.foundationYear}<br>
+                  <strong>Founders:</strong>${company.foundedBy.join(",")}<br>
+                  <strong>CEO:</strong>${company.Ceo}<br>
+                  <strong>Products:</strong>${str}`;
+                  
+            }
+        }
+    </script>
+</head>
+<body>
+    <script>
+            document.write("<h2>Company Details:</h2>");
+            document.write(company);
+            document.write("<br><br>CEO:"+company.resign()+" resigned");
+            document.write("<h2>After CEO's Resignation:</h2>");
+            document.write(company);
+            company.hireCeo("Tim cook");
+            document.write("<h2>After  Hireing NEW CEO:</h2>");
+            document.write(company);
+            company.CreatNewProduct({name:"Ihome",year: 2020});
+            document.write("<h2>After Adding New Product:</h2>");
+            document.write(company);
+
+    </script>
+</body>
+</html>

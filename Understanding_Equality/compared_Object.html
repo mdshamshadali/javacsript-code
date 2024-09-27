@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Understand equality</title>
+    <script>
+       let p1 = {
+        name: "shamshad",
+        age: 22
+       };
+       let p2 = {
+        name: "shamshad",
+        age: 22
+       };
+       let p3 = p2;
+        document.write(`${p1=== p2}<br>`);// in javascript object commpared by addresses and value:false
+        document.write(`${p3=== p2}<br>`);// adresses is same : true
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

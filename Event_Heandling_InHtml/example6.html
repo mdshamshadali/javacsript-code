@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> change the background color according to click radio button </title>
+    <script>
+        function changecolor(ref) {
+            switch (ref.nextSibling.nodeValue.trim()) 
+            {
+                case "red":
+                    document.body.bgColor = "red";
+                    break;
+                case "green":
+                    document.body.bgColor = "green";
+                    break;
+                case "blue":
+                    document.body.bgColor = "blue";
+                    break;
+
+            }
+
+        }
+    </script>
+</head>
+
+<body>
+    <div>
+        <h1>Select the option Change the background color:</h1>
+        <input type="radio" name="r1" onclick="changecolor(this)">red
+        <br>
+        <input type="radio" name="r1" onclick="changecolor(this)">green
+        <br>
+        <input type="radio" name="r1" onclick="changecolor(this)">blue
+        <br>
+
+    </div>
+</body>
+
+</html>

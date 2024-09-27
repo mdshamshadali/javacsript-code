@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let a;
+        let str = "You entered";
+        a = prompt("Enter a number");
+        if(isNaN(a))
+           str = " you did not input a numeric vlue!";
+           else{
+            a = Number(a);
+            if(a<0)
+               str += " a negative number"
+               else if(a <= 9)
+                  str += " a single digit number";
+                  else if(a <= 99)
+                     str = "You entered"+" a double digit number";
+                     else
+                        str += " a number with 3 or more digit"
+           }
+           document.write(`${str}`);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

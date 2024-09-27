@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating Object by using Constructor:</title>
+
+    <script>
+        let myData = new Object();
+        myData.name = "shamshad";
+        myData.age = 22;
+        myData.year = 2002;
+        console.log(myData);
+        let myData1 = myData;
+        myData1.year = 2024;
+        console.log(myData1);
+        console.log('name' in myData);//true   it is existed in object property
+        console.log('userName' in myData);//false this is not existed property in oject.
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

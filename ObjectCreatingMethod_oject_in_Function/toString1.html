@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        let myCar = new Object;
+        myCar.company = "maruti";
+        myCar.model = "baleno";
+        myCar.year = 2024;
+        myCar.toString = function()//creat a new obj.
+        {
+            return `${myCar.company},${myCar.model},${myCar.year}`;// to return a string is compalsury in creat new tostring.
+        }
+        document.write(myCar);
+        let currentData = new Date();
+        let myArray = new Array(1,2,3,4);
+        document.write("<br>");
+        document.write(currentData);
+        document.write("<br>");
+        document.write(myArray);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parameter in object in function:</title>
+
+    <script>
+
+        let myCar = {
+            company: "maruti",
+            model: "Baleno",
+            year : 2012,
+            printAll : function(msg) {
+                console.log(msg);
+                console.log(myCar.company+ ","+myCar.model+ ","+myCar.year);
+            }
+        };
+        myCar.printAll("The following detail:");
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create and add New Elements</title>
+    <script>
+        function addpara() {
+           let newPara = document.createElement("p");
+           let newText = document.createTextNode("This para added at the top");
+           newPara.append(newText);
+           let mydiv = document.getElementById("d1");
+           let fpara= document.getElementById("p1");
+           mydiv.insertBefore(newPara, fpara);
+        }
+    </script>
+</head>
+
+<body>
+    <div id="d1">
+        <p id="p1">
+            this is first paragraph.
+        </p>
+        <p id="p2">
+            this is second paragraph
+        </p>
+    </div>
+    <input type="button" value="add new para" onclick="addpara();">
+</body>
+
+</html>

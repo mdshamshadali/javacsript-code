@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global varible in javascript</title>
+    <script>
+        let a = 10;//Global variable
+        function f1()
+        {    
+           var a = 20;//local varible
+            alert(' in f1 is '+a);// in f1 is 20.
+            alert(" in f1 global a is "+window.a);//output is : in f1 global a is undefined.
+            //jitne variable let keyword ke sath bante h global area me to ye  window object ki property nhi kahalati h. 
+        } 
+        
+        function f2()
+        {   
+            var a = 20;//local varible
+            alert(' in f2 is '+a);// output is: in f2 is 20
+            alert(" in f2 global a is "+window.a);//output is : in f1 global a is undefined.
+          
+        }
+        
+    </script>
+</head>
+<body>
+    <div>
+        To call f1 is <a href="javascript:f1()">Click Here!</a><br>
+        To call f2 is <a href="javascript:f2()">Click Here!</a>
+        
+    </div>
+</body>
+</html>

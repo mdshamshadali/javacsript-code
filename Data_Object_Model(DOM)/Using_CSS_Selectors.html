@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Using Css selectors Like: querySelector,querySelectorAll etc.</title>
+    <script>
+        function shamshad(){
+            // Select first para:
+         //  x = document.querySelector("p");
+           // console.log (x);
+           // select an element with class is Highlight
+          //let y = document.querySelector(".highlight");
+          //console.log(y);
+          // select the para with class highlight
+          //let z = document.querySelector( "p.highlight");
+          //console.log(z);
+          //Select all the paragraph
+          //let para = document.querySelectorAll("p");
+          //console.log(para)
+          // select all skills 
+           /*let ul = document.querySelector("ul");
+          let p= ul.querySelectorAll("li");
+              p.forEach(x => {
+            console.log(x);
+          });*/
+          // select all h3 and display their html code.
+          let h3 = document.querySelectorAll("h3");
+           h3.forEach(s =>{
+            console.log(s);
+           });
+        
+
+        }
+    </script>
+</head>
+<body>
+    <img src="../DOM/shaim.jpg" alt="my pic" style="height: 150px; width: 150px;">
+    <h1>Hello Shamshad</h1>
+    <h2 class="highlight">My name is  Md Shamshad Ali</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque quam cumque minus, harum voluptatem tenetur!
+    </p>
+    <h3>our skills:</h3>
+    <ul>
+        <li>c language</li>
+        <li>c++ language</li>
+        <li> java language</li>
+        <li>python language</li>
+    </ul>
+    <p class="highlight">Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet consectetur.consectetur adipisicing elit. Doloremque quam cumque minus, harum voluptatem tenetur!
+    </p>
+    <h3>Our Core Skills:</h3>
+
+    <ul>
+        <li>Data Structure</li>
+        <li>operating system</li>
+        <li>Computer networking</li>
+        <li>Cloud Computing</li>
+    </ul>
+    <h3>  My Website Links:</h3>
+    <a href="https://www.linkedin.com/in/md-shamshad-ali-a855ab222/">My linkedin</a><br>
+    <a href="https://www.instagram.com/stories/shamshadali_03/">My instagram</a><br>
+    <input type="button" value="click here" onclick="shamshad()" style="margin-top:20px">
+
+</body>
+</html>

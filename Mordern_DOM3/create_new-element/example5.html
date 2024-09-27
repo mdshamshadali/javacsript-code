@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>add by using append</title>
+    <script>
+        function addpara(){
+            let div = document.querySelector("div");
+            let newara = document.createElement("p");
+            newara.innerText = " this is third paragraph."
+             div.append("welcome",newara)
+
+
+        }
+    </script>
+</head>
+<body>
+    <div id="d1">
+        <p id="p1">
+            this is first paragraph.
+        </p>
+        <p id="p2">
+            this is second paragraph.
+        </p>
+    </div>
+    <input type="button" value="Add para" onclick="addpara();">    
+</body>
+</html>

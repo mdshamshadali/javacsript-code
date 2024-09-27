@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Callback</title>
+
+    <script>
+        function multiply(a,b,checkres){
+            let prod = a * b;
+        document.write(`product of ${a} and ${b} is ${prod}<br>`);
+        checkres(prod);
+        }
+
+
+        function evenOdd(result) {
+            if(result %2 == 0)
+            document.write(`${result} is even`);
+            else
+               document.write(`${result} is odd`);
+        }
+        multiply(3,4,evenOdd);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

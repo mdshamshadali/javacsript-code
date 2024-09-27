@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SetInterval function </title>
+    <script>
+        function showmessage() {
+            console.log(new Date());
+        }
+
+        function start() {
+            a = setInterval(showmessage, 2000);//now this is global varible.
+            // setInterval ( function_name without(), ms) (showmessage,2000) 2000 is equal to = 2 sencond.
+        }
+
+        function stop() {
+            clearInterval(a);// this is clearinterval to used stoped runing setinterval();
+            console.log("Stopped!");
+        }
+    </script>
+</head>
+
+<body>
+
+    <input type="button" value="Click On!" onclick="start()">
+    <input type="button" value="Stoped!" onclick="stop()">
+    <!-- call function by using onclick and give the 2nd function_name by using () like start() -->
+</body>
+
+</html>

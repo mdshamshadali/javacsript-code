@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <Script>
+        /*Q.(1). In the code shown on the body of the function Showlink() so that it   
+        it prompts  the user to input a website name and generates a dynamic link to that 
+        website on the page */
+
+        function ShowLink(){
+            let sitename = prompt("Enter a Website Name:");
+            let link = document.querySelector("a");
+            link.setAttribute("href", " https://www."+ sitename);
+            let dotpos= sitename.indexOf(".");
+            let name = sitename.substring(0,dotpos);
+            link.innerText = "Visted "+ name; 
+
+        }
+
+
+    </Script>
+</head>
+<body>
+    <h3>generates the  website link</h3>
+    <input type="button" value="Creat the Website Link" onclick="ShowLink()">
+    <br>
+    <a></a>
+</body>
+</html>

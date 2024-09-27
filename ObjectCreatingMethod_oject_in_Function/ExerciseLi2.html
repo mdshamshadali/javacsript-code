@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise2</title>
+
+   <script>
+
+    let student ={
+        name : "shamshad",
+        age : 22,
+        phy : 45,
+        chem : 50,
+        math : 65
+    };
+    let total = 0;
+    for(let key in student){
+        if(key!=='name' && key!=='age'){
+            total= total+student[key];
+        }
+    }
+    document.write("Total is " + total );
+   </script>
+
+</head>
+<body>
+    
+</body>
+</html>

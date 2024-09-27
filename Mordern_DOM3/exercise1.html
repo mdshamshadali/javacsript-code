@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mordern DOM</title>
+    <script>
+        function oprate(){
+            //access the second <li>
+                let l1=document.querySelector('li');
+                let l2=l1.nextElementSibling;
+                console.log(l2);
+            // access the last <li>
+                let list = document.querySelector("ul");
+                let last = list.lastElementChild;
+                console.log(last);
+                
+            
+        }
+    </script>
+</head>
+<body>
+    <div>
+        <h2>Welcome</h2>
+        <h3>Our mission</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At odio minus totam earum architecto! Distinctio?</p>
+        <h3>our skills</h3>
+        <ul>
+            <li>C</li>
+            <li>C++</li>
+            <li>Java</li>
+            <li>JavaScript</li>
+        </ul>
+    </div>
+    <input type="button" value="Click me" onclick="oprate();">
+</body>
+</html>

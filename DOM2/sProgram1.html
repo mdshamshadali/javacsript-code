@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /* In the code  shown, write the body of function ShowDate() so that it displays current
+        system date in the para.
+        Make sure the month is in actual calender style and text should be in crimson color and bold.
+        */
+        function showDate(){
+           let para = document.querySelector('p');
+           let today = new Date();
+           para.innerText = today.getDate() + "-" +(Number(today.getMonth()) +1) +"-" +today.getFullYear();
+           para.style.color = "crimsom";
+           para.style.fontWeight = "bold";
+        }
+    </script>
+</head>
+
+<body>
+    <p>Click the button show current date:</p>
+
+    <input type="button" value="show date" onclick="showDate();">
+</body>
+
+</html>

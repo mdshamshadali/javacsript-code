@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Addition using Form</title>
+    <style>
+        .modify{
+            position: relative;
+            left: 120px;
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <form name="myform">
+        <table>
+            <caption>Number Addition program:</caption>
+            <tr>
+                <th>First Number:</th>
+                <td><input type="text" name="txtfno"></td>
+            </tr>
+            <tr>
+                <th>Second Number:</th>
+                <td><input type="text" name="txtsno"></td>
+            </tr>
+            <tr>
+                <th> Sum is:</th>
+                <td><input type="text" name="txtresult"></td>
+            </tr>
+            <tr>
+                <td><input type="button" class="modify" name="btnadd" value="add" ></td>
+                <td><input type="button" class="modify" name="btnclear" value="clear"></td>
+            </tr>
+        </table>
+    </form>
+    <script src="example7.js"></script>
+</body>
+</html>

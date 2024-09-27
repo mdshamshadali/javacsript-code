@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let a;
+        a = prompt("Enter a number");
+        if (isNaN(a)){
+            document.write("Given input is wrong!");
+        }
+        else {
+            let b = Number(a);
+            if (b < 0) {
+                document.write('Number is nigative');
+            }
+            else if (b <= 9) {
+                document.write(' single digit positive number ');
+            }
+            else if (b <= 99) {
+                document.write(' double digit positive number ');
+            }
+            else {
+                document.write('3 or more digit number');
+            }
+
+        }
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

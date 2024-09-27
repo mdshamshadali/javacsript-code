@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Removing property:</title>
+
+    <script>
+          let myCar = new Object();
+        myCar["company"] = 'maruti';
+       myCar["model"] = 'baleno';
+        myCar["year"] = 2024;
+        myCar["reg no"] = 'BR07AB2233';
+        console.log("my car details");
+        console.log("company:" +myCar.company);
+        console.log("model:" +myCar.model);
+        console.log("year:" +myCar.year);
+        console.log("reg no:" +myCar['reg no']);
+        delete myCar.year;
+        console.log("company:" +myCar.company);
+        console.log("model:" +myCar.model);
+        console.log("year:" +myCar.year);
+        console.log("reg no:" +myCar['reg no']);
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

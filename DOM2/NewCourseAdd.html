@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InnerHTML property:</title>
+
+    <script>
+        //1. write the code to add new skills to the list:
+        function AddNewCourse(){
+            let skills = prompt("ADD NEW SKILL:");
+            let ul = document.querySelector("ul");
+            ul.innerHTML += "<li>"+skills+"</li>"; 
+            //2. Bold the Skills Name by Using this code:
+            let x = document.querySelector("ul");
+            let list1 = x.querySelectorAll("li");
+            list1.forEach(items => {
+                items.innerHTML = "<strong>"+items.innerHTML +"</strong>";
+            });
+
+
+        }
+    </script>
+</head>
+<body>
+    <h3>our skills:</h3>
+    <ul>
+        <li>c language</li>
+        <li>c++ language</li>
+        <li> java language</li>
+        <li>python language</li>
+    </ul>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <input type="button" value="click here" onclick="AddNewCourse()" style="margin-top:20px">
+</body>
+</html>
